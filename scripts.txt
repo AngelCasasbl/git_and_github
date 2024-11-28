@@ -89,7 +89,7 @@ git status
 # 10. git log
 # Ver un historial detallado de confirmaciones
 git log
-# Ver un historial simplificado
+Ver un historial simplificado
 git log --oneline
 
 
