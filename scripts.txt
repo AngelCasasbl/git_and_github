@@ -1,0 +1,89 @@
+Instalación:
+
+Primero que todo, ya que estamos realizando las pruebas para el ambiente de R y Rstudio, tendremos que instalar los programas correspondientes.
+
+Descargar R:
+The R Project for Statistical Computing - https://www.r-project.org/
+
+Descargar Rstudio:
+RStudio Desktop - Posit - https://posit.co/download/rstudio-desktop/
+
+
+Código para actualizar R: 
+
+install.packages("installr") 
+library("installr")
+updateR()
+
+
+Instalar git:
+https://git-scm.com/downloads
+
+Realizar la configuración global del git:
+
+git config --global user.name "Su Nombre"
+git config --global user.email "su.correo@ejemplo.com"
+
+Para comprobar:
+git config --global user.name
+git config --global user.email
+
+
+Crear una cuenta en Github:
+Join GitHub - https://github.com/join
+
+# 1. git init
+# Navegar al directorio raíz del proyecto e inicializar un repositorio Git
+cd /ruta/del/proyecto
+git init
+
+# 2. git clone
+# Clonar un repositorio remoto
+git clone https://github.com/usuario/nombre-del-repositorio.git
+# O clonar en un directorio con un nombre personalizado
+git clone https://github.com/usuario/nombre-del-repositorio.git mi-proyecto
+
+# 3. git add
+# Agregar un archivo específico al área de preparación
+git add archivo.txt
+# Agregar todos los archivos nuevos o modificados
+git add .
+
+# 4. git commit
+# Confirmar los cambios preparados con un mensaje
+git commit -m "Mensaje descriptivo de los cambios"
+
+# 5. git push
+# Enviar los cambios confirmados al repositorio remoto
+git push origin main
+
+# 6. git pull
+# Descargar y combinar los cambios desde el repositorio remoto
+git pull origin main
+
+# 7. git branch
+# Crear una nueva rama
+git branch nueva-funcionalidad
+# Cambiar a la nueva rama
+git checkout nueva-funcionalidad
+# Ver todas las ramas existentes
+git branch
+
+# 8. git merge
+# Cambiar a la rama principal
+git checkout main
+# Fusionar una rama en la principal
+git merge nueva-funcionalidad
+
+# 9. git status
+# Ver el estado actual del repositorio
+git status
+
+# 10. git log
+# Ver un historial detallado de confirmaciones
+git log
+# Ver un historial simplificado
+git log --oneline
+
+
+
