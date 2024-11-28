@@ -32,6 +32,13 @@ git config --global user.email
 Crear una cuenta en Github:
 Join GitHub - https://github.com/join
 
+
+# Para crear un repositorio en github directamente desde R
+library("usethis")
+library("httr2") # para installar httr2 es posible que se necesite tener la version actualizada de Rtools
+usethis::use_git()
+usethis::use_github()
+
 # 1. git init
 # Navegar al directorio raíz del proyecto e inicializar un repositorio Git
 cd /ruta/del/proyecto
